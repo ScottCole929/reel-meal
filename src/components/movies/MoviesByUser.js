@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getMoviesByUserId, deleteMovie, deleteMeal } from "../../services/moviesService";
 import { getMealByMovieId } from "../../services/mealsService";
 import { useNavigate, Link } from "react-router-dom";
+import DinnerMovie1 from "../../images/DinnerMovie1.jpg"
 
 export const MoviesByUser = ({ currentUser }) => {
   const [myMovies, setMyMovies] = useState([]);
@@ -54,7 +55,10 @@ export const MoviesByUser = ({ currentUser }) => {
 
 
   return (
-    <div>
+    <div className="list-header">
+      <div>
+      <img className="logo" src={DinnerMovie1} alt="Reel Meal Logo"/>
+      </div>
       <h2>Your Reel Meal Submissions</h2>
       {myMovies.map((movie) => {
         const meal = myMeals.find((placeholder) => placeholder.movieId === movie.id)?.meal;
@@ -73,9 +77,9 @@ export const MoviesByUser = ({ currentUser }) => {
             {meal && (
               <div>
                 <Link to={`/movies/mine/${movie.id}/edit/${meal.id}`}>
-                  <button>Edit</button>
+                  <button className="btn-new">Edit</button>
                 </Link>
-                <button onClick={handleAllDeletions(movie.id, meal.id)}>Delete</button>
+                <button className="btn-new btn-lg" onClick={handleAllDeletions(movie.id, meal.id)}>Delete</button>
               </div>
             )}
           </div>

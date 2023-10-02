@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { postMovie } from "../../services/moviesService"
 import { postMeal } from "../../services/mealsService"
 import { useNavigate } from "react-router-dom"
+import DinnerMovie1 from "../../images/DinnerMovie1.jpg"
 
 export const NewMovieForm = ( { currentUser } ) => {
     const [yearChoice, setYearChoice] = useState('')
@@ -79,7 +80,8 @@ export const NewMovieForm = ( { currentUser } ) => {
 
 return (
     <form className="movie-form">
-    <h2 className="movie-form-title">Add a Reel Meal to the archives!</h2>
+        <img className="logo" src={DinnerMovie1} alt="Reel Meal Logo"/>
+        <h2 className="movie-form-title">Add a Reel Meal to the archives!</h2>
     <fieldset>
         <div className="form-group">
             <label htmlFor="name">Movie Title:</label>
@@ -162,7 +164,7 @@ return (
             />
         </div>
     </fieldset>
-    <button className="button" onClick={handleSave}>
+    <button className="btn btn-lg btn-secondary" onClick={handleSave}>
         Add Entry
     </button>
 </form>

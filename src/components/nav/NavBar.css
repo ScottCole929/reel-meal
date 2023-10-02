@@ -1,21 +1,23 @@
+
+
 .navbar {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    background-color: lightgray;
+    background-color: rgb(28, 94, 164);
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 1px 3px 4px grey;
+    /* box-shadow: 1px 3px 4px grey; */
   }
   
-  .navbar__item {
+  .navbar-item {
     flex-basis: 20%;
     list-style-type: none;
     text-align: center;
     margin: auto;
   }
   
-  .navbar__logout {
+  .navbar-logout {
     margin-left: auto;
   }
   
@@ -24,6 +26,7 @@
     color: black;
     font-family: monospace;
     font-size: 1.25rem;
+    font-family: 'Jost' !important;
   }
   
   .navbar-link:hover {
