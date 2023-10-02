@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
 import { getUserByEmail } from "../../services/userService"
 import DinnerMovie1 from "../../images/DinnerMovie1.jpg"
 
@@ -34,11 +33,12 @@ export const Login = () => {
     <main className="container-login">
       <section>
         <form className="form-login" onSubmit={handleLogin}>
-          <h1>Welcome to Reel Meal</h1>
+          <h5>Welcome to </h5>
+          <h1>Reel Meal</h1>
+          <img className="logo" src={DinnerMovie1} alt="Reel Meal Logo"/>
           <h2>Where cinephiles and foodies become one!</h2>
-          <img src={DinnerMovie1} alt="Reel Meal Logo"/>
-          <h4>Reel Meal is a database of movies that contain scenes of food being cooked or prepared. You can search through films submitted or submit your own movies with cooking scenes for our database!</h4>
-          <h2>Please sign in</h2>
+          <h4>Reel Meal is a database of movies containing scenes of food being cooked or prepared. You can search through films or submit your own movies with cooking scenes for our database!</h4>
+          <h3>Please sign in</h3>
           <fieldset>
             <div className="form-group">
               <input

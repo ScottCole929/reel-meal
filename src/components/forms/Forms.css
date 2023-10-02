@@ -1,0 +1,17 @@
+.logo {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profile-form-title {
+    font-family: 'Jost';
+    margin-bottom: 30px;
+}
+
+.button-new {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+}

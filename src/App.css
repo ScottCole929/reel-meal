@@ -11,16 +11,92 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 4em
     }
   }
   
   .movie-name {
-    font-size: 1rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-family: 'Jost';
+
+  }
+
+  .movie-card:hover {
+    transform: scale(1.15)
   }
   
   .movie-img {
     width: 15rem;
     margin: 1rem;
     box-shadow: 4px 3px 6px -1px grey;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  fieldset {
+    width: 54%;
+    margin: 20rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px -1px rgb(143, 70, 22);
+    border-style: solid;
+    background-color: rgb(28, 94, 164);
+    font-size: 1.1rem;
+    padding: 2rem;
+  }
+  
+  .btn {
+    align-self: center;
+    margin-right: 3rem;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 4px -1px grey;
+    background-color: darksalmon;
+    border: 2px solid black;
+    color: rgb(177, 10, 10);
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin: 1rem;
+    font-family: 'Jost';
+    font-size: 1.3rem
+  }
+  
+  form label {
+    margin-right: 1rem;
+  }
+  
+  form .radio {
+    margin: 0.25rem;
+  }
+  
+  form input {
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    border-radius: 6px;
+    border-style: double;
+  }
+
+
+  .movie-form-title {
+    font-family: 'Jost';
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    justify-content: center;
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }

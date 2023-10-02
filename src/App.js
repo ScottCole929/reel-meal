@@ -5,7 +5,8 @@ import { Register } from "./components/auth/Register"
 import { Authorized } from "./views/Authorized";
 import { ApplicationViews } from "./views/ApplicationViews";
 
-document.body.style.backgroundColor = "#9A2A2A";
+// document.body.style.backgroundColor = "#9A2A2A";
+document.body.style.backgroundColor = "#2F4F4F";
 
 export const App = () => {
   return (

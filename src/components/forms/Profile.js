@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { userChange } from "../../services/userService"
+import DinnerMovie1 from "../../images/DinnerMovie1.jpg"
+import "./Forms.css"
 
 export const Profile = ({ currentUser }) => {
     const [userInfo, setUserInfo] = useState({
@@ -43,10 +45,12 @@ export const Profile = ({ currentUser }) => {
     }
 
     return (
-            <form className="profile-form" onSubmit={handleReset}>
+        <div>
+        <form className="profile-form" onSubmit={handleReset}>
+          <img className="logo" src={DinnerMovie1} alt="Reel Meal Logo"/>
             <h2 className="profile-form-title">Your Profile</h2>
             <fieldset>
-                <div className="profile-group">
+                <div className="form-group">
                     <label>Name:</label>
                     <input
                         value={userInfo.name}
@@ -60,7 +64,7 @@ export const Profile = ({ currentUser }) => {
                 </div>
             </fieldset>
             <fieldset>
-                <div className="profile-group">
+                <div className="form-group">
                     <label>Email:</label>
                     <input
                         value={userInfo.email}
@@ -73,9 +77,10 @@ export const Profile = ({ currentUser }) => {
                     />
                 </div>
             </fieldset>
-            <fieldset>
-                <button type="submit">Update Profile</button>
+            <fieldset className="button-new">
+                <button className="btn btn-lg btn-secondary" type="submit">Update Profile</button>
             </fieldset>
     </form>
+    </div>
     )
 }

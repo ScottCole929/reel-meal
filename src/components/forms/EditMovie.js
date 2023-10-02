@@ -182,7 +182,7 @@ export const EditMovie = () => {
                 />
             </div>
         </fieldset>
-        <button className="button" onClick={handleSave}>
+        <button className="btn btn-lg btn-secondary" onClick={handleSave}>
             Save Reel Meal
         </button>
     </form>
